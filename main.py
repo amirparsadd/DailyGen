@@ -26,8 +26,5 @@ def main(start, end):
         result = CompositeVideoClip([video, title], size = (1080,1920), bg_color = (0, 0, 0))
         result.write_videofile(f"./output/result{str(i)}.mp4", bitrate='8000k', threads=8)
 
-        print("Sleeping After Production...")
-        sleep(1)
-
 if __name__ == "__main__":
     main(START, END)
